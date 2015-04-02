@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/react.js"></script>
+    <script src="../build/JSXTransformer.js"></script>
+  </head>
+  <body>
+    <div id="test"></div>
+    <script type="text/jsx">
+      var HelloMessage = React.createClass({
+        render: function(){
+          return <div><h1>Hello {this.props.name}</h1><h2>{this.props.value}</h2></div>;
+        }
+      });
+
+      React.render(
+        <HelloMessage name="xiaochuan" value="chuanshi"/>,
+        document.getElementById("test")
+      );
+    </script>
+  </body>
+</html>
